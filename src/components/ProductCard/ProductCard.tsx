@@ -1,4 +1,5 @@
 import HeartIcon from '../../assets/icon/ic_heart.png';
+import './ProductCard.css';
 
 function ProductCard({ items }) {
   return (

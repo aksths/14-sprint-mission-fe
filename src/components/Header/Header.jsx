@@ -1,5 +1,12 @@
-import logo from '../assets/logo/panda_logo.png';
-import '../Header/Header.css';
+import { Link, NavLink } from 'react-router-dom';
+import logo from '../../assets/logo/panda_logo.png';
+import './Header.css';
+
+function getLinkStyle({ isActive }) {
+  return {
+    color: isActive ? '#3692FF' : '',
+  };
+}
 
 function Header() {
   return (
@@ -7,21 +14,21 @@ function Header() {
         <div className='headerWrap'>
             <div className='headerLeft'>
                 <h1>
-                    <a href="/">
+                    <Link to="/">
                         <img src={logo} alt="판다마켓 로고"/>
                         <span>판다마켓</span>               
-                    </a>
+                    </Link>
                 </h1>
                 <ul>
                     <li>
-                        <a href="/">자유게시판</a>
+                        <NavLink to="/">자유게시판</NavLink>
                     </li>
                     <li>
-                        <a href="/">중고마켓</a>
+                        <NavLink style={getLinkStyle} to="/items">중고마켓</NavLink>
                     </li>
                 </ul>
             </div>
-            <a href="/">로그인</a>
+            <Link to="/">로그인</Link>
         </div>
     </header>
   );

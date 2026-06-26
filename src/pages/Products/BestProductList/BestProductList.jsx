@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
-import axios from '../../utils/axios';
-import ProductCard from '../ProductCard/ProductCard';
+import axios from '../../../utils/axios';
+import ProductCard from '../../../components/ProductCard/ProductCard';
+import './BestProductList.css';
 
 
 function BestProductList() {

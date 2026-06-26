@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import axios from '../../utils/axios';
-import SearchIcon from '../../assets/icon/ic_search.png' 
-import BtnRight from '../../assets/icon/btn_left.png'
-import BtnLeft from '../../assets/icon/btn_right.png'
-import ProductCard from '../ProductCard/ProductCard';
-import '../../components/Products.css';
+import axios from '../../../utils/axios';
+import SearchIcon from '../../../assets/icon/ic_search.png' 
+import BtnRight from '../../../assets/icon/btn_left.png'
+import BtnLeft from '../../../assets/icon/btn_right.png'
+import ProductCard from '../../../components/ProductCard/ProductCard';
+import './ProductList.css';
 
 const LIMIT = 10;
 
