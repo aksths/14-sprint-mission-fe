@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './components/App';
 import Home from './pages/Home/Home';
 import Products from './pages/Products/Products';
-import ProductList from './pages/Products/ProductList/ProductList';
+import Registration from './pages/Registration/Registration';
 
 function Main() {
 
@@ -11,10 +11,8 @@ function Main() {
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-            <Route path="items">
-              <Route index element={<Products />} />
-              <Route path="list" element={<ProductList />} />
-            </Route>
+          <Route path="items" element={<Products />} />
+          <Route path="registration" element={<Registration />} />
         </Route>
       </Routes>
     </BrowserRouter>

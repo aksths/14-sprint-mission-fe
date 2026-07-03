@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from '../../../utils/axios';
 import SearchIcon from '../../../assets/icon/ic_search.png' 
 import BtnRight from '../../../assets/icon/btn_left.png'
@@ -60,12 +61,12 @@ function ProductList() {
               <img src={SearchIcon} alt="검색" />
               <input
                 type="text"
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}
                 placeholder="검색할 상품을 입력해주세요"
               />
             </div>
-            <button
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}>상품 등록하기</button>
+            <Link to='/registration'>상품 등록하기</Link>
           </div>
 
           <select
@@ -73,7 +74,7 @@ function ProductList() {
             onChange={(e) => setOrderBy(e.target.value)}
           >
             <option value="recent">최신순</option>
-            <option value="favorite">좋아요순</option>
+            {/* <option value="favorite">좋아요순</option> */}
           </select>
         </div>
       </div>

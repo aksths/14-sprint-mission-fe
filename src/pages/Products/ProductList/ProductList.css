@@ -49,8 +49,7 @@ h2 {
     color: var(--gray);
     font-size: 1rem;
 }
-.productSearch button {
-    width: 133px;
+.productSearch a {
     line-height: 26px;
     color: var(--white);
     font-weight: 600;
@@ -93,16 +92,16 @@ h2 {
     border: 1px solid var(--lightGray300);
 }
 
-/* 태블릿 ~ 모바일 (745px 이하) */
-@media (max-width: 745px) {
+/* 태블릿 ~ 모바일 (1199px 이하) */
+@media (max-width: 1199px) {
 
     .productList .productCard {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* 모바일 (375px 이하) */
-@media (max-width: 375px) {
+/* 모바일 (745px 이하) */
+@media (max-width: 745px) {
 
     .productList .productCard {
         grid-template-columns: repeat(2, 1fr);

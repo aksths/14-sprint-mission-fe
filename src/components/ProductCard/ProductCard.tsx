@@ -1,4 +1,5 @@
 import HeartIcon from '../../assets/icon/ic_heart.png';
+import DefaultImg from '../../assets/images/img_default.png';
 import './ProductCard.css';
 
 function ProductCard({ items }) {
@@ -6,7 +7,7 @@ function ProductCard({ items }) {
     <ul className='productCard'>
       {items.map((item) => (
         <li key={item.id}>
-          <img src={item.images?.[0]} alt={item.name}/>
+          <img src={item.images?.[0] ?? DefaultImg } alt={item.name}/>
           <p>{item.name}</p>
           <p>{item.price.toLocaleString()}원</p>
           <div>

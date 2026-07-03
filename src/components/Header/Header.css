@@ -52,7 +52,7 @@ h1 a {
     background-color: var(--blue);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 745px) {
     .headerLeft {
         gap: 0 8px;
     }

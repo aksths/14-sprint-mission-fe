@@ -32,8 +32,8 @@ h2 {
     background-color: var(--lightGray200);
 }
 
-/* 태블릿 ~ 모바일 (745px 이하) */
-@media (max-width: 745px) {
+/* 태블릿 ~ 모바일 (1199px 이하) */
+@media (max-width: 1199px) {
     .bestProductList .productCard li:nth-child(n + 3) {
         display: none;
     }
@@ -44,8 +44,8 @@ h2 {
 
 }
 
-/* 모바일 (375px 이하) */
-@media (max-width: 375px) {
+/* 모바일 (745px 이하) */
+@media (max-width: 745px) {
     .bestProductList .productCard li:nth-child(n + 2) {
         display: none;
     }
